@@ -1,0 +1,12 @@
+.hr{
+    width: 50%;
+background-image: linear-gradient(to left,red,black,red);
+height: 5px;
+margin: auto;
+border-radius: 55%;
+}
+.im{
+    width: 500px;
+    height: 350px;
+    margin-right: 500px;
+}
