@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicroTech</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./MainPage.html">
+    <script src="./mscript.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a href="./MainPage.html"><img src="./logo.jfif" width="100" height="100"></a>
+        <a class="navbar-brand" >Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                
+               
+                <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                </li>
+
+            </ul>
+            
+            <form onsubmit="return false" class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search Product" id="search">
+                <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+            </form>
+            
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-expanded="false">
+                    Menu
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item  " href="./AccountPage.html">Account</a>
+                    <a class="dropdown-item  " href="#">Orders</a>
+                    <a class="dropdown-item  " href="./ChatPage.html">Chats</a>
+                </div>
+            </li>
+        </div>
+    </nav>
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                aria-controls="nav-home" aria-selected="true">productA</a>
+            <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                aria-controls="nav-profile" aria-selected="false">ProductB</a>
+            <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                aria-controls="nav-contact" aria-selected="false">productC</a>
+        </div>
+    </nav>
+    <a href="./LoginPage.html"><h1 class="hh"> Login now</h1></a>
+
+    <div class="profileheader  text-center">
+        <h1 class="text-info">Gallery</h1>
+        <div class="hr"></div>
+    </div>
+
+    <div class="filter-box">
+        <a href="#" class="bton active" data-filter="all">All</a>
+        <a href="#" class="bton" data-filter="mobiles">Mobiles</a>
+        <a href="#" class="bton" data-filter="pc">PC & Laptops</a>
+        <a href="#" class="bton" data-filter="others">others</a>
+    </div>
+
+    <main>
+        <div class="slide-container">
+            <section class="container" id="store-products">
+                
+                            <div class="store-product mobiles">
+                                <div class="product-under">
+                                    <figure class="product-image">
+                                        <img
+                                            src="./download.jpg"
+                                            alt="popular labtops and computers"
+                                        />
+                                        <div class="product-over">
+                                            <button
+                                                class="btn btn-small addToCart"
+                                                data-product-id="1"
+                                            >
+                                                <i class="fas fa-cart-plus"></i>Add
+                                                to cart
+                                            </button>
+                                            <a
+                                                href="detail_page.html"
+                                                class="btn btn-small"
+                                                >More Info</a
+                                            >
+                                        </div>
+                                    </figure>
+                                    <div class="product-summary">
+                                        <h4 class="productName">Product 1</h4>
+                                        <span class="stars"></span>
+                                        <p>
+                                            luctus quis et est. Integer pretium
+                                            purus
+                                        </p>
+                                        <h6 class="price">
+                                            $<span class="priceValue">999</span>
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="store-product pc">
+                                <div class="product-under">
+                                    <figure class="product-image">
+                                        <img
+                                        src="./11.jfif"
+                                            alt="popular labtops and computers"
+                                        />
+                                        <div class="product-over">
+                                            <button
+                                                class="btn btn-small addToCart"
+                                                data-product-id="2"
+                                            >
+                                                <i class="fas fa-cart-plus"></i>Add
+                                                to cart
+                                            </button>
+                                            <a
+                                                href="detail_page.html"
+                                                class="btn btn-small"
+                                                >More Info</a
+                                            >
+                                        </div>
+                                    </figure>
+                                    <div class="product-summary">
+                                        <h4 class="productName">Product 2</h4>
+                                        <span class="stars"></span>
+                                        <p>
+                                            luctus quis et est. Integer pretium
+                                            purus
+                                        </p>
+                                        <h6 class="price">
+                                            $<span class="priceValue">599</span>
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="product-under">
+                                    <figure class="product-image">
+                                        <img
+                                            src="./12.jfif"
+                                            alt="popular labtops and computers"
+                                        />
+                                        <div class="product-over">
+                                            <button
+                                                class="btn btn-small addToCart"
+                                                data-product-id="3"
+                                            >
+                                                <i class="fas fa-cart-plus"></i>Add
+                                                to cart
+                                            </button>
+                                            <a
+                                                href="detail_page.html"
+                                                class="btn btn-small"
+                                                >More Info</a
+                                            >
+                                        </div>
+                                    </figure>
+                                    <div class="product-summary">
+                                        <h4 class="productName">Product 3</h4>
+                                        <span class="stars"></span>
+                                        <p>
+                                            luctus quis et est. Integer pretium
+                                            purus
+                                        </p>
+                                        <h6 class="price">
+                                            $<span class="priceValue">650</span>
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="product-under">
+                                    <figure class="product-image">
+                                        <img
+                                            src="./13.jfif"
+                                            alt="popular labtops and computers"
+                                        />
+                                        <div class="product-over">
+                                            <button
+                                                class="btn btn-small addToCart"
+                                                data-product-id="4"
+                                            >
+                                                <i class="fas fa-cart-plus"></i>Add
+                                                to cart
+                                            </button>
+                                            <a
+                                                href="detail_page.html"
+                                                class="btn btn-small"
+                                                >More Info</a
+                                            >
+                                        </div>
+                                    </figure>
+                                    <div class="product-summary">
+                                        <h4 class="productName">Product 4</h4>
+                                        <span class="stars"></span>
+                                        <p>
+                                            luctus quis et est. Integer pretium
+                                            purus
+                                        </p>
+                                        <h6 class="price">
+                                            $<span class="priceValue">899</span>
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+            </section>
+        </div>
+    </main>          
+            
+               
+            
+       
+
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+            integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</body>
+
+</html>
