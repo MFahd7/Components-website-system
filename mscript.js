@@ -18,4 +18,22 @@ for (i = 0; i<btns.length; i++){
             }
         })
     })
-}
+} 
+
+ // search code
+const search = document.getElementById("search");
+
+search.addEventListener("keyup", (e)=> {
+    e.preventDefault();
+    const searchValue = search.value.toLowerCase().trim();
+
+    for(i=0; i<storeProducts.length; i++){
+        if (storeProducts[i].classList.contains(searchValue)) {
+            storeProducts[i].style.display = "block";
+        } else if(searchValue == ""){
+            storeProducts[i].style.display = "block";
+        } else {
+            storeProducts[i].style.display = "none";
+        }
+    }
+})
